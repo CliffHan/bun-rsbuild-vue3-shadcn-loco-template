@@ -3,6 +3,11 @@ import { pluginVue } from '@rsbuild/plugin-vue';
 
 export default defineConfig({
   plugins: [pluginVue()],
+  resolve: {
+    alias: {
+      '@': './src',
+    }
+  },
   tools: {
     postcss: {
       postcssOptions: {
