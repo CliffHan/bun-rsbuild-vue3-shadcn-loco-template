@@ -2,6 +2,7 @@
   <div class="content">
     <h1>Rsbuild with Vue</h1>
     <p>Start building amazing things with Rsbuild.</p>
+    <h1 class="text-3xl font-bold underline">Hello world!</h1>
   </div>
 </template>
 
