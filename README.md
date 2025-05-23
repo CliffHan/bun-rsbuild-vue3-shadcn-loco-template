@@ -1,29 +1,22 @@
-# Rsbuild project
+# Bun-Rsbuild-Vue3-Shadcn-Loco-Template
 
-## Setup
+A template works as frontend with [loco.rs](https://loco.rs). Supports loco's `SaaS app with client side rendering`.
 
-Install the dependencies:
+## How to use
 
-```bash
-pnpm install
+```
+bun install
+bun run dev
 ```
 
-## Get started
+## Changes to be done in loco.rs backend project
 
-Start the dev server:
+To make this frontend fully works with loco.rs generated Saas project, you'll need to:
 
-```bash
-pnpm dev
-```
+1. update url template in mail template.
 
-Build the app for production:
+For magic link in `src/mailers/auth/magic_link`: Change to `"{{host}}/login?token={{token}}&type=magic"`
 
-```bash
-pnpm build
-```
+For reset password link in `src/mailers/auth/forgot`: Change to `"{{domain}}/reset-password?token={{resetToken}}"`
 
-Preview the production build locally:
-
-```bash
-pnpm preview
-```
+For welcome mail in `src/mailers/auth/welcome`: Change to `"{{domain}}/verify?token={{verifyToken}}"`
