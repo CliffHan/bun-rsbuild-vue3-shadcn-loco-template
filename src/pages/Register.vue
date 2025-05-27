@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue"
 import { useRouter } from "vue-router"
-import RegisterForm from "@/components/RegisterForm.vue"
+import RegisterForm from "@/components/views/RegisterForm.vue"
 import { authApi } from "@/api/auth"
 import { toast } from "vue-sonner"
 

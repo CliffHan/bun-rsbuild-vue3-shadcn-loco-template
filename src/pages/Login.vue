@@ -1,5 +1,5 @@
 <script setup>
-import LoginForm from "@/components/LoginForm.vue"
+import LoginForm from "@/components/views/LoginForm.vue"
 import { ref, onMounted } from "vue"
 import { useRouter, useRoute } from "vue-router"
 import { authApi } from "@/api/auth"

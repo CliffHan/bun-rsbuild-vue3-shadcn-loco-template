@@ -3,7 +3,7 @@ import { ref, onMounted } from "vue"
 import { useRouter, useRoute } from "vue-router"
 import { authApi } from "@/api/auth"
 import { toast } from "vue-sonner"
-import ResetPasswordForm from "@/components/ResetPasswordForm.vue"
+import ResetPasswordForm from "@/components/views/ResetPasswordForm.vue"
 
 const router = useRouter()
 const route = useRoute()

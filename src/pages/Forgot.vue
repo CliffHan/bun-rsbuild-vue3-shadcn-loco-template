@@ -3,7 +3,7 @@ import { ref } from "vue"
 import { useRouter } from "vue-router"
 import { authApi } from "@/api/auth"
 import { toast } from "vue-sonner"
-import ForgotForm from "@/components/ForgotForm.vue"
+import ForgotForm from "@/components/views/ForgotForm.vue"
 
 const router = useRouter()
 const email = ref("")
